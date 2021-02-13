@@ -1,0 +1,7 @@
+<%if @user%>
+    <p>Welcome, <%=@user.username%></p>
+<%end%>
+
+    <% @tweets.each do |tweet| %>
+        <%= tweet.content %> 
+    <% end %>
